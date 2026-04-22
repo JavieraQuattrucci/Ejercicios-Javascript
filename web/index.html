@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+        <head>
+            <meta charset="UTF-8">
+            <title>El área de un Círculo</title>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+            <link rel="stylesheet" href="/css/style.css">
+                    
+        </head>
+        <body>
+                <!-- BOLITAS AMARILLAS---------------------->
+                <canvas id="particles"></canvas>
+                <!--------CURSOR---------------------------->    
+                <div class="cursor-wrap">
+                    <div class="cursor-dot"></div>
+                    <div class="cursor-ring"></div>
+                </div>
+                <!------------PROBANDO EFECTOS LUCES-------->
+                <div class="light-beam1"></div>    
+                <div class="light-beam2"></div>    
+                <div class="light-beam3"></div>    
+                <div class="light-beam4"></div>  
+                <!------------------------------------------>
+            <header>
+                <div class="caja-titulo">
+                    <div class="titulo-img">
+                        <h1>Ejercicios </h1>
+                        <img class="js-img" src="/img/js-logo.png">
+                    </div>
+                </div>
+            </header>
+                <main>    
+                    <nav class="nav nav-pills flex-column flex-sm-row">
+                            <a class="flex-sm-fill text-sm-center nav-link" 
+                            data-bs-toggle="modal" href="#" data-bs-target="#Modal1">
+                                Área de un Círculo
+                            </a>
+                            <a class="flex-sm-fill text-sm-center nav-link"
+                            data-bs-toggle="modal" href="#" data-bs-target="#Modal2">
+                                Ordenamiento Burbuja
+                            </a>
+                            <a class="flex-sm-fill text-sm-center nav-link"
+                            data-bs-toggle="modal" href="#" data-bs-target="#Modal3">
+                                Adivina el número
+                            </a>
+                            <a class="flex-sm-fill text-sm-center nav-link" 
+                            data-bs-toggle="modal" href="#" data-bs-target="#Modal4">
+                            Conteo de Vocales
+                            </a>
+                    </nav>
+                 </main>
+                <!-- Modal 1 ---------------------->
+                                <div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="miModalLabel" aria-hidden="true" data-bs-theme="dark">
+                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                                    
+                                    <div class="modal-content">
+                                        
+                                        <div class="modal-header">
+                                        <h5 class="modal-title" id="miModalLabel">Ejercicio Práctico 1</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                        </div>
+                                        <div class="modal-body">                         
+                                                    <h2 class="subtitulo"> Cálculo del Área de un Círculo con JavaScript</h2>
+                                                      <p>En esta actividad pondrás en práctica conceptos básicos de JavaScript y manipulación del DOM, aplicados a un ejercicio sencillo de matemáticas. 
+                                                         Debes desarrollar una pequeña aplicación web que calcule el área de un círculo aplicando la fórmula:
+                                                            Area=π×r2
+                                                </p>
+                                            <p>
+                                                <button id="miBoton" class="btn btn-warning">Ingresar diámetro</button>
+                                            </p>
+                                            <p id="areaTxt"></p>
+                                            <canvas id="miCanvas" width="500px" height="500px">
+                                            </canvas>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                            Cerrar
+                                        </button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                <!-- Modal 2 -------------------------------------------------->
+                                <div class="modal fade" id="Modal2" tabindex="-1" aria-labelledby="miModalLabel" aria-hidden="true" data-bs-theme="dark">
+                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">                                   
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <h5 class="modal-title" id="miModalLabel">Ejercicio Práctico 2</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                                    <h2 class="subtitulo">
+                                                        Identificación del Mayor y Menor con Ordenamiento Burbuja
+                                                    </h2>
+                                                    <p>
+                                                        Desarrollar un programa en JavaScript que lea tres valores ingresados por el usuario, 
+                                                        determine el mayor y el menor número, y maneje el caso especial
+                                                        en que los tres valores sean iguales. Con este ejercicio reforzarás
+                                                        el uso de arrays, ciclos (for, do-while), condicionales 
+                                                        y el método de ordenamiento burbuja.
+                                                    </p>
+                                                    
+                                            <p>
+                                                <button id="btnNumeros" class="btn btn-warning">Ingresar números</button>
+                                            </p>
+                                            
+                                            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                                <p id="msj2"></p>
+                                            </div>
+                                            <canvas id="miCanvas" width="500px" height="500px">
+                                            </canvas>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                            Cerrar
+                                        </button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                    <!-- Modal 3 -------------------------------------------------->
+
+                                <div class="modal fade" id="Modal3" tabindex="-1" aria-labelledby="miModalLabel" aria-hidden="true" data-bs-theme="dark">
+                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">                                   
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <h5 class="modal-title" id="miModalLabel">Ejercicio Práctico 3</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                                    <h2 class="subtitulo">
+                                                        Adivinar el número (1 - 10)
+                                                    </h2>
+                                                    <p>Juego con validación y control de intentos<br>
+                                                         Desarrollarás un mini-juego en JavaScript donde el computador   
+                                                         elige un número aleatorio del 1 al 10 y el usuario debe adivinarlo
+                                                          en 3 intentos. Practicarás funciones, validación de entrada, 
+                                                          uso de Math.random() / Math.floor(), control de intentos y prevención de números repetidos.       
+
+
+                                                    </p>
+                                                    
+                                            <p>
+                                                <button id="btnAdivina" class="btn btn-warning">Ingresar números</button>
+                                            </p>
+                                                
+                                            <div id="msj3" class="oculto alert alert-warning alert-dismissible fade show" role="alert">
+                                                <strong></strong> <p id="ej3historial"></p>  
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                            Cerrar
+                                        </button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                    <!-- Modal 4 -------------------------------------------------->
+
+                                <div class="modal fade" id="Modal4" tabindex="-1" aria-labelledby="miModalLabel" aria-hidden="true" data-bs-theme="dark">
+                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">                                   
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <h5 class="modal-title" id="miModalLabel">Ejercicio Práctico 4</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                                    <h2 class="subtitulo">
+                                                        Conteo de Vocales en Palabras
+                                                    </h2>
+                                                    <p>
+                                                        
+                                                    Desarrollar un programa en JavaScript que, 
+                                                    a partir de palabras ingresadas por el usuario, 
+                                                    cuente la cantidad de vocales presentes en el conjunto total, 
+                                                    utilizando funciones expresivas y métodos de manipulación de cadenas y arreglos.
+
+                                                    </p>
+                                                    
+                                            <p>
+                                                <button id="btnVocales" class="btn btn-warning">Ingresar palabras</button>
+                                            </p>
+                                                
+                                            <div id="msj4" class="oculto alert alert-warning alert-dismissible fade show" role="alert">
+                                                <strong></strong> <p id="ej4vocales"></p>  
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                            Cerrar
+                                        </button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+
+            <footer>
+            </footer>
+    </body>
+        <script src="/script/cursor.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <script src="/script/app.js"></script>
+        <script src="/script/app2.js"></script>
+        <script src="/script/app3.js"></script>
+        <script src="/script/app4.js"></script>
+        <script src="/script/paralax-luces.js"></script>
+        <script src="/script/bolitas.js"></script>
+    </html>
