@@ -303,3 +303,15 @@ a, button {
 .oculto {
   display: none;
 }
+
+.codigo{
+  margin: auto;
+  text-align: center;
+}
+.language-javascript{
+    margin: auto !important;
+    width: 95% !important;
+    max-width: 850px !important;
+    font-size: 14px !important;
+    max-height: 300px !important;
+}

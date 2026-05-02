@@ -3,6 +3,7 @@
         <head>
             <meta charset="UTF-8">
             <title>El área de un Círculo</title>
+            <link href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism-tomorrow.css" rel="stylesheet" />
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
             <link rel="stylesheet" href="/css/style.css">
                     
@@ -47,6 +48,14 @@
                             data-bs-toggle="modal" href="#" data-bs-target="#Modal4">
                             Conteo de Vocales
                             </a>
+                            <a class="flex-sm-fill text-sm-center nav-link" 
+                            data-bs-toggle="modal" href="#" data-bs-target="#Modal5">
+                            Clases y Objetos
+                            </a>
+                            <a class="flex-sm-fill text-sm-center nav-link" 
+                            data-bs-toggle="modal" href="#" data-bs-target="#Modal6">
+                            Modelado de Clases
+                            </a>
                     </nav>
                  </main>
                 <!-- Modal 1 ---------------------->
@@ -56,7 +65,7 @@
                                     <div class="modal-content">
                                         
                                         <div class="modal-header">
-                                        <h5 class="modal-title" id="miModalLabel">Ejercicio Práctico 1</h5>
+                                        <h5 class="modal-title" id="miModalLabel">Ejercicio Práctico Mod 3:1</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                                         </div>
                                         <div class="modal-body">                         
@@ -85,7 +94,7 @@
                                     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">                                   
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                        <h5 class="modal-title" id="miModalLabel">Ejercicio Práctico 2</h5>
+                                        <h5 class="modal-title" id="miModalLabel">Ejercicio Práctico Mod 3:2</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                                         </div>
                                         <div class="modal-body">
@@ -124,7 +133,7 @@
                                     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">                                   
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                        <h5 class="modal-title" id="miModalLabel">Ejercicio Práctico 3</h5>
+                                        <h5 class="modal-title" id="miModalLabel">Ejercicio Práctico Mod 3:3</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                                         </div>
                                         <div class="modal-body">
@@ -162,7 +171,7 @@
                                     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">                                   
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                        <h5 class="modal-title" id="miModalLabel">Ejercicio Práctico 4</h5>
+                                        <h5 class="modal-title" id="miModalLabel">Ejercicio Práctico Mod 3:4</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                                         </div>
                                         <div class="modal-body">
@@ -181,7 +190,7 @@
                                             <p>
                                                 <button id="btnVocales" class="btn btn-warning">Ingresar palabras</button>
                                             </p>
-                                                
+
                                             <div id="msj4" class="oculto alert alert-warning alert-dismissible fade show" role="alert">
                                                 <strong></strong> <p id="ej4vocales"></p>  
                                             </div>
@@ -195,6 +204,79 @@
                                     </div>
                                 </div>
 
+                     <!-- Modal 5 -------------------------------------------------->
+
+                                <div class="modal fade" id="Modal5" tabindex="-1" aria-labelledby="miModalLabel" aria-hidden="true" data-bs-theme="dark">
+                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">                                   
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <h5 class="modal-title" id="miModalLabel">Ejercicio Práctico Mod 4:1</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                                    <h2 class="subtitulo">
+                                                        Clases y Objetos
+                                                    </h2>
+                                                    <p>
+                                                    En esta actividad pondrás en práctica los 
+                                                    conceptos básicos de la programación orientada a
+                                                     objetos (POO) en JavaScript. Aprenderás a definir
+                                                      clases con atributos y métodos, así como a crear 
+                                                      objetos a partir de ellas. El objetivo es que 
+                                                      puedas modelar entidades de la vida real y simular sus características 
+                                                    y comportamientos en un programa sencillo.<br><br>
+
+                                                    Clase Alumno<br>
+                                                        - Define una clase que modele a un alumno de una institución educacional.<br>
+                                                        - Incluye atributos como nombre, edad, carrera, entre otros.<br>
+                                                        - Agrega un método que muestre ordenadamente todos sus atributos.<br><br>
+
+                                                        <div class="codigo">
+                                                        <pre>
+                                                            <code class="language-javascript" id="codigoAlumno"></code>
+                                                        </pre>
+                                                        </div>
+                                                        <br>
+                                                        Clase Banda Musical<br>
+                                                        - Define una clase que represente a una banda musical.<br>
+                                                        - Incluye atributos como nombre, genero, integrantes y discos.<br>
+                                                        - Agrega un método para mostrar todos los atributos y otro para listar solo los discos publicados.<br>
+                                                        Instancia un objeto de la clase con los datos de tu banda favorita. <br><br>
+                                                        <div class="codigo">
+                                                        <pre>
+                                                            <code class="language-javascript" id="codigoBanda"></code>
+                                                        </pre>
+                                                        </div>
+                                                        <br>
+                                                        Clase Perro<br>
+                                                        - Define una clase que modele a un perro.<br>
+                                                        - Incluye atributos como nombre, raza, edad, etc.<br>
+                                                        - Agrega un método para mostrar todos sus atributos y otro para “ladrar”.<br>
+                                                        - Instancia un objeto de la clase con los datos de tu perro o de un perro famoso
+                                                    </p>
+                                                    <button class="btn-perro" data-index="0">Perro 1</button>
+                                                    <button class="btn-perro" data-index="1">Perro 2</button>
+                                                    <button class="btn-perro" data-index="2">Perro 3</button>
+
+                                                <p id="info-perros" style="white-space: pre;"></p>
+                                                
+                                            <div class="codigo">
+                                            <pre>
+                                                <code class="language-javascript" id="codigoPerro"></code>
+                                            </pre>
+                                            </div>
+
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                            Cerrar
+                                        </button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+
+
             <footer>
             </footer>
     </body>
@@ -204,6 +286,9 @@
         <script src="/script/app2.js"></script>
         <script src="/script/app3.js"></script>
         <script src="/script/app4.js"></script>
+        <script src="/script/clases-y-objetos-js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
         <script src="/script/paralax-luces.js"></script>
         <script src="/script/bolitas.js"></script>
+        
     </html>

@@ -1,0 +1,149 @@
+class Alumno {
+  constructor(nombre, edad, carrera) {
+    this.nombre = nombre;
+    this.edad = edad;
+    this.carrera = carrera;
+  }
+
+  mostrarInfo() {
+    console.log(`Nombre: ${this.nombre}, Edad: ${this.edad}, Carrera: ${this.carrera}`);
+  }
+}
+
+
+class BandaMusical {
+  constructor(nombre, genero, integrantes, discos) {
+    this.nombre = nombre;
+    this.genero = genero;
+    this.integrantes = integrantes;
+    this.discos = discos; // Array
+  }
+
+  mostrarInfo() {
+    console.log(`Banda: ${this.nombre}, Género: ${this.genero}, Integrantes: ${this.integrantes}`);
+  }
+
+  listarDiscos() {
+    console.log("Discos:", this.discos.join(", "));
+  }
+}
+
+const Banda01 = new BandaMusical(
+  "Marilyn Manson",
+  "Industrial metal / Rock alternativo",
+  4,
+  ["Antichrist Superstar", "Mechanical Animals", "Holy Wood (In the Shadow of the Valley of Death)", "The Golden Age of Grotesque"]
+);
+
+
+class Perro {
+  constructor(nombre, sexo, raza, edad, color) {
+    this.nombre = nombre;
+    this.sexo = sexo;
+    this.raza = raza;
+    this.edad = edad;
+    this.color = color;
+  }
+
+  mostrarInfo() {
+    console.log(`Nombre: ${this.nombre}, Sexo: ${this.sexo}, Raza: ${this.raza}, Edad: ${this.edad}, Color: ${this.color}`);
+  }
+
+  ladrar() {
+    console.log("¡Guau guau!");
+  }
+}
+
+const perros = [
+  new Perro("Fantasma", "Macho", "Labrador", 3, "Azul"),
+  new Perro("Bulma","Hembra", "Poodle", 5, "Rosado"),
+  new Perro("Luna", "Hembra", "Boxer", 2, "Blanco")
+];
+
+document.querySelectorAll(".btn-perro").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const index = btn.dataset.index;
+
+    document.getElementById("info-perros").textContent =
+      JSON.stringify(perros[index]);
+  });
+});
+
+
+document.getElementById("codigoPerro").textContent =
+`class Perro {
+  constructor(nombre, sexo, raza, edad, color) {
+    this.nombre = nombre;
+    this.sexo = sexo;
+    this.raza = raza;
+    this.edad = edad;
+    this.color = color;
+  }
+
+   mostrarInfo() {
+    console.log(\`Nombre: \${this.nombre}, Sexo: \${this.sexo}, Raza: \${this.raza}, Edad: \${this.edad}, Color: \${this.color}\`);
+  }
+
+  ladrar() {
+    console.log("¡Guau guau!");
+  }
+}
+
+const perros = [
+  new Perro("Fantasma", "Macho", "Labrador", 3, "Azul"),
+  new Perro("Bulma","Hembra", "Poodle", 5, "Rosado"),
+  new Perro("Luna", "Hembra", "Boxer", 2, "Blanco")
+];
+
+document.querySelectorAll(".btn-perro").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const index = btn.dataset.index;
+
+    document.getElementById("info-perros").textContent =
+      JSON.stringify(perros[index]);
+  });
+});`;
+
+
+document.getElementById("codigoAlumno").textContent =
+`class Alumno {
+  constructor(nombre, edad, carrera) {
+    this.nombre = nombre;
+    this.edad = edad;
+    this.carrera = carrera;
+  }
+
+  mostrarInfo() {
+    console.log(\`Nombre: \${this.nombre}, Edad: \${this.edad}, Carrera: \${this.carrera}\`);
+  }
+}`;
+
+
+document.getElementById("codigoBanda").textContent =
+`
+class BandaMusical {
+  constructor(nombre, genero, integrantes, discos) {
+    this.nombre = nombre;
+    this.genero = genero;
+    this.integrantes = integrantes;
+    this.discos = discos; // Array
+  }
+
+  mostrarInfo() {
+    console.log(\`Banda: \${this.nombre}, Género: \${this.genero}, Integrantes: \${this.integrantes}\`);
+  }
+
+  listarDiscos() {
+    console.log("Discos:", this.discos.join(", "));
+  }
+}
+
+const Banda01 = new BandaMusical(
+  "Marilyn Manson",
+  "Industrial metal / Rock alternativo",
+  4,
+  ["Antichrist Superstar", "Mechanical Animals", "Holy Wood (In the Shadow of the Valley of Death)", "The Golden Age of Grotesque"]
+);`;
+
+
+
