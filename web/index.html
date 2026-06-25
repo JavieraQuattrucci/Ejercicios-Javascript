@@ -54,7 +54,7 @@
                             </a>
                             <a class="flex-sm-fill text-sm-center nav-link" 
                             data-bs-toggle="modal" href="#" data-bs-target="#Modal6">
-                            Funciones Callback
+                            Funciones DOM
                             </a>
 
                             
@@ -289,16 +289,45 @@
                                         </div>
                                         <div class="modal-body">
                                                     <h2 class="subtitulo">
-                                                        Funciones Callback (Validación y Cálculo)
+                                                        Funciones DOM 
                                                     </h2>
-                                                    <p>
-                                                    Pondrás en práctica el uso de funciones callback en JavaScript,
-                                                    aplicando validaciones, cálculos matemáticos y manejo de asincronía mediante temporizadores.
-                                                    </p>
-                                                    
-                                            <p>
-                                                <button id="btnCallback" class="btn btn-warning">Ingresar un número</button>
-                                            </p>
+                                           
+                                                    <!-- Ejercicio 1 -->
+                                                    <div class="ejercicio">
+                                                        <h2>1. Repetir palabra</h2>
+                                                        Palabra: <input type="text" id="palabra" value="Hola">
+                                                        Cuántas veces? <input type="number" id="veces" value="8">
+                                                        <button onclick="repetir()">REPETIR!</button>
+                                                        <div id="resultado1" class="resultado"></div>
+                                                    </div>
+
+                                                    <!-- Ejercicio 2 -->
+                                                    <div class="ejercicio">
+                                                        <h2>2. Aplicar color</h2>
+                                                        Elija un color: <input type="color" id="color" value="#00ff00">
+                                                        <button onclick="aplicarColor()">APLICAR!</button>
+                                                        <p id="texto2">
+                                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                                        Similique possimus incidunt ducimus officiis tempore blanditiis sapiente perferendis non.
+                                                        </p>
+                                                    </div>
+
+                                                    <!-- Ejercicio 3 -->
+                                                    <div class="ejercicio">
+                                                        <h2>3. Operaciones matemáticas</h2>
+                                                        Ingrese un número <input type="number" id="num1" value="5">
+                                                        Ingrese otro número <input type="number" id="num2" value="10">
+                                                        <button onclick="calcular()">CALCULAR!</button>
+                                                        <div id="resultado3" class="resultado"></div>
+                                                    </div>
+
+                                                    <!-- Ejercicio 4 -->
+                                                    <div class="ejercicio">
+                                                        <h2>4. Invertir texto</h2>
+                                                        Ingrese algo <input type="text" id="texto4" value="Holanda que talca">
+                                                        <button onclick="invertir()">INVERTIR!</button>
+                                                        <div id="resultado4" class="resultado"></div>
+                                                    </div>
 
                                             <div id="msj44" class="oculto alert alert-warning alert-dismissible fade show" role="alert">
                                                 <strong></strong> <p id="ej4vocales"></p>  
@@ -324,6 +353,7 @@
         <script src="../script/app3.js"></script>
         <script src="../script/app4.js"></script>
         <script src="../script/app5.js"></script>
+        <script src="../script/app6.js"></script>
         <script src="../script/clases-y-objetos-js"></script>
         <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
         <script src="../script/paralax-luces.js"></script>
