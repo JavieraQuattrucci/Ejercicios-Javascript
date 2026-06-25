@@ -31,8 +31,8 @@ document.addEventListener('mousemove', (e) => {
 });
 
 function animate() {
-  currentX += (mouseX - currentX) * 0.95; //delay cursor
-  currentY += (mouseY - currentY) * 0.95;
+  currentX += (mouseX - currentX) * 1; //delay cursor
+  currentY += (mouseY - currentY) * 1;
 
   cursor.style.left = currentX + 'px';
   cursor.style.top = currentY + 'px';
